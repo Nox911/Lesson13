@@ -103,7 +103,7 @@ body {
 			color: #fff;
 			font-size: 30px;
 			padding-right: 50px;
-			text-decoration: none;
+			texdt-decoration: none;
 
 		}
 	}
@@ -190,6 +190,127 @@ body {
 	.viewing+img {
 		display: block;
 		margin:50px auto 0;
+	}
+}
+
+.about {
+	height: 710px;
+	text-align: center;
+	background-color: #fff;
+
+	&-text {
+		padding-top: 145px;
+		font-family: panton-extrabold;
+		font-size: 36px;
+		color: #000;
+		text-transform:uppercase;
+		}
+	
+	&-items {
+		width: 1200px;
+		margin: 90px auto 0;
+				
+		.about-item {
+			position: relative;
+		width: 480px;
+		max-height:300px;
+		display: inline-block;
+		
+		padding-top: 45px;
+
+		&::after {
+			content:"";
+			position: absolute;
+			top:-30px;
+			left:0;
+			border-left:4px solid blue;
+			height: 100px;
+		}
+
+
+		&:first-child {
+			margin-right:200px;
+		}
+		
+		.text {
+			padding-left: 20px;
+			position: relative;
+			text-align:left;
+			font-family: panton-extrabold;
+			font-size: 30px;
+			color: #000;
+			text-transform:uppercase;
+			
+			}
+
+		p {
+			
+			text-align:left;
+			font-size: 18px;
+			font-family: panton-semibold;
+		}
+
+	}
+
+	.item1 .text::before {
+
+				position: absolute;
+				content:"";
+				left: 20px;
+				top:-60px;
+				background-image: url("../img/about-1.png");
+				width: 85px;
+				height: 55px;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+	.item2 .text::before {
+
+				position: absolute;
+				content:"";
+				left: 20px;
+				top:-60px;
+				background-image: url("../img/about-2.png");
+				width: 85px;
+				height: 55px;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+
+
+		}
+
+	
+
+}
+
+.trusting {
+	text-align: center;
+	background-color: #292d30;
+	
+
+	&-text {
+		
+		padding-top: 145px;
+		padding-bottom:100px;
+		font-family: panton-extrabold;
+		font-size: 36px;
+		color: #fff;
+		text-transform:uppercase;
+		text-align: center;
+	}
+
+	// &-wrap {
+	// 	line-height: 165px;
+	// 	vertical-align: middle;
+	// }
+
+	.trust {
+		padding: 15px 20px;
+		display: inline-block;
+		height: 255px;
+		line-height: 255px;
+		vertical-align: middle;
 	}
 }
 
