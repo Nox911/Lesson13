@@ -233,6 +233,7 @@ body {
 .trusting {
   text-align: center;
   background-color: #292d30;
+  min-height: 600px;
 }
 .trusting-text {
   padding-top: 145px;
@@ -249,6 +250,62 @@ body {
   height: 255px;
   line-height: 255px;
   vertical-align: middle;
+}
+
+.task {
+  color: #000;
+  background-color: #fff;
+  height: 900px;
+}
+.task-text {
+  font-size: 36px;
+  font-family: panton-extrabold;
+  text-align: center;
+  padding-top: 145px;
+  text-transform: uppercase;
+  position: relative;
+}
+.task-text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -15px;
+  border-bottom: 3px solid blue;
+  width: 200px;
+  margin-left: -100px;
+}
+.task-text + p {
+  font-size: 24px;
+  font-family: panton-semibold;
+  text-align: center;
+  padding: 50px 420px 100px;
+}
+.task .oppotunities {
+  min-height: 400px;
+  text-align: center;
+}
+.task .oppotunities .items {
+  width: 350px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+.task .oppotunities .items img {
+  margin: 10px auto;
+  display: block;
+  height: 145px;
+}
+.task .oppotunities .items h4 {
+  padding: 25px 10px;
+  font-size: 30px;
+  font-family: panton-semibold;
+}
+.task .oppotunities .items p {
+  text-align: center;
+  font-size: 18px;
+  font-family: panton-semibold;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -57,9 +57,9 @@ body {
 		margin:40px 170px 0 0;
 
 		&::after {
-				content:"";
-				display:block;
-				clear:both;
+			content:"";
+			display:block;
+			clear:both;
 		}
 		
 		.number {
@@ -154,28 +154,28 @@ body {
 			width: 42px;
 			height: 67px;
 			top: 15px;
-    	right: 680px;
+			right: 680px;
 			background-image: url("../img/arrow.png");
 		}
 
-	
 
-	&-link {
-		margin: 40px auto 0;
-		display: block;
-		width: 350px;
-		height: 70px;
-		line-height: 70px;
-		vertical-align: middle;
-		text-align: center;
-		text-decoration: none;
-		background-color: #059feb;
-		color: #fff;
-		font-family: panton-extrabold;
-		text-transform: uppercase;
-		border-radius:20px;
-		font-size: 30px;
-	}
+
+		&-link {
+			margin: 40px auto 0;
+			display: block;
+			width: 350px;
+			height: 70px;
+			line-height: 70px;
+			vertical-align: middle;
+			text-align: center;
+			text-decoration: none;
+			background-color: #059feb;
+			color: #fff;
+			font-family: panton-extrabold;
+			text-transform: uppercase;
+			border-radius:20px;
+			font-size: 30px;
+		}
 
 	}
 
@@ -204,81 +204,81 @@ body {
 		font-size: 36px;
 		color: #000;
 		text-transform:uppercase;
-		}
+	}
 	
 	&-items {
 		width: 1200px;
 		margin: 90px auto 0;
-				
+
 		.about-item {
 			position: relative;
-		width: 480px;
-		max-height:300px;
-		display: inline-block;
-		
-		padding-top: 45px;
+			width: 480px;
+			max-height:300px;
+			display: inline-block;
 
-		&::after {
-			content:"";
-			position: absolute;
-			top:-30px;
-			left:0;
-			border-left:4px solid blue;
-			height: 100px;
-		}
+			padding-top: 45px;
 
-
-		&:first-child {
-			margin-right:200px;
-		}
-		
-		.text {
-			padding-left: 20px;
-			position: relative;
-			text-align:left;
-			font-family: panton-extrabold;
-			font-size: 30px;
-			color: #000;
-			text-transform:uppercase;
-			
+			&::after {
+				content:"";
+				position: absolute;
+				top:-30px;
+				left:0;
+				border-left:4px solid blue;
+				height: 100px;
 			}
 
-		p {
-			
-			text-align:left;
-			font-size: 18px;
-			font-family: panton-semibold;
+
+			&:first-child {
+				margin-right:200px;
+			}
+
+			.text {
+				padding-left: 20px;
+				position: relative;
+				text-align:left;
+				font-family: panton-extrabold;
+				font-size: 30px;
+				color: #000;
+				text-transform:uppercase;
+
+			}
+
+			p {
+
+				text-align:left;
+				font-size: 18px;
+				font-family: panton-semibold;
+			}
+
 		}
+
+		.item1 .text::before {
+
+			position: absolute;
+			content:"";
+			left: 20px;
+			top:-60px;
+			background-image: url("../img/about-1.png");
+			width: 85px;
+			height: 55px;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		.item2 .text::before {
+
+			position: absolute;
+			content:"";
+			left: 20px;
+			top:-60px;
+			background-image: url("../img/about-2.png");
+			width: 85px;
+			height: 55px;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
 
 	}
-
-	.item1 .text::before {
-
-				position: absolute;
-				content:"";
-				left: 20px;
-				top:-60px;
-				background-image: url("../img/about-1.png");
-				width: 85px;
-				height: 55px;
-				background-size: contain;
-				background-repeat: no-repeat;
-			}
-	.item2 .text::before {
-
-				position: absolute;
-				content:"";
-				left: 20px;
-				top:-60px;
-				background-image: url("../img/about-2.png");
-				width: 85px;
-				height: 55px;
-				background-size: contain;
-				background-repeat: no-repeat;
-			}
-
-
-		}
 
 	
 
@@ -287,6 +287,7 @@ body {
 .trusting {
 	text-align: center;
 	background-color: #292d30;
+	min-height:600px;
 	
 
 	&-text {
@@ -313,4 +314,84 @@ body {
 		vertical-align: middle;
 	}
 }
+
+.task {
+	color: #000;
+	background-color: #fff;
+	height: 900px;
+
+	&-text {
+		font-size: 36px;
+		font-family: panton-extrabold;
+		text-align: center;
+		padding-top: 145px;
+		
+		text-transform:uppercase;
+		position: relative;
+		
+		&::after {
+			content:"";
+			position: absolute;
+			left:50%;
+			right:50%;
+			bottom:-15px;
+			border-bottom: 3px solid blue;
+			width:200px;
+			margin-left:-100px;
+
+		}
+		
+		
+
+		&+p {
+			font-size: 24px;
+			font-family: panton-semibold;
+			text-align: center;
+			padding: 50px 420px 100px;
+		}
+	}
+	
+	.oppotunities {
+		min-height: 400px;
+		text-align: center;
+		
+		
+		.items {
+			width: 350px;
+			margin-left: 40px;
+			margin-right: 40px;
+			display: inline-block;
+			vertical-align: top;
+			
+			
+
+
+			img {
+				margin: 10px auto;
+				display: block;
+				height: 145px;
+				
+			}
+
+			h4 {
+				padding: 25px 10px;
+				font-size: 30px;
+				font-family: panton-semibold;
+
+			}
+
+			p {
+				text-align: center;
+				font-size: 18px;
+				font-family: panton-semibold;
+			}
+		}
+
+
+	}
+
+	}
+
+
+
 
